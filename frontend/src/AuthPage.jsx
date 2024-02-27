@@ -5,7 +5,7 @@ const AuthPage = (props) => {
       e.preventDefault();
       const { value } = e.target[0];
       axios.post(
-        'https://chat-application-backend-topaz.vercel.app/authenticate',
+        'https://chat-application-backend-murex.vercel.app/authenticate',
         {username: value}
       )
       .then(r => props.onAuth({ ...r.data, secret: value  }))
