@@ -5,7 +5,7 @@ const AuthPage = (props) => {
       e.preventDefault();
       const { value } = e.target[0];
       axios.post(
-        'http://localhost:3001/authenticate',
+        'https://vercel.com/jvlpranathi-gmailcom/chat-application-frontend/6KjpofJ3hyVkD7bGM8uP6hsssX3W',
         {username: value}
       )
       .then(r => props.onAuth({ ...r.data, secret: value  }))
